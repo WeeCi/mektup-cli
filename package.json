@@ -1,0 +1,34 @@
+{
+  "name": "mektup-cli",
+  "version": "0.1.0",
+  "description": "Command-line client for Mektup - register domains, create mailboxes, send email, and list messages against your Mektup account, from any shell or script. The fallback path for agents/environments without MCP support.",
+  "type": "module",
+  "bin": {
+    "mektup": "./cli.js"
+  },
+  "dependencies": {
+    "commander": "^13.0.0"
+  },
+  "keywords": [
+    "email",
+    "email-hosting",
+    "domain-email",
+    "cli",
+    "smtp",
+    "imap",
+    "ai-agent"
+  ],
+  "author": "Mektup <contact@usemektup.com>",
+  "license": "MIT",
+  "homepage": "https://usemektup.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeeCi/mektup-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WeeCi/mektup-cli/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

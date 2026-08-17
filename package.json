@@ -4,7 +4,7 @@
   "description": "Command-line client for Mektup - register domains, create mailboxes, send email, and list messages against your Mektup account, from any shell or script. The fallback path for agents/environments without MCP support.",
   "type": "module",
   "bin": {
-    "mektup": "./cli.js"
+    "mektup": "cli.js"
   },
   "dependencies": {
     "commander": "^13.0.0"

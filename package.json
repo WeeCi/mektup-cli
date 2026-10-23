@@ -1,6 +1,6 @@
 {
   "name": "mektup-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command-line client for Mektup - register domains, create mailboxes, send email, and list messages against your Mektup account, from any shell or script. The fallback path for agents/environments without MCP support.",
   "type": "module",
   "bin": {

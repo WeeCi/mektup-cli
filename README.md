@@ -52,7 +52,7 @@ mektup list-mailboxes <domain>
 List mailboxes on a domain.
 
 ```sh
-mektup send-email --from <address> --to <address> --subject <text> [--text <text>] [--html <html>]
+mektup send-email --from <address> --to <address> --subject <text> [--text <text>] [--html <html>] [--cc <addresses>] [--bcc <addresses>] [--in-reply-to <id>]
 ```
 Send a real email. `--from` must be a mailbox on a domain registered to this account.
 

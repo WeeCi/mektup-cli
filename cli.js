@@ -62,10 +62,13 @@ program
   .description("Send a real email")
   .requiredOption("--from <address>", "Sender - domain must be registered to this account")
   .requiredOption("--to <address>", "Recipient")
+  .option("--cc <addresses>", "Cc, comma-separated")
+  .option("--bcc <addresses>", "Bcc, comma-separated")
   .requiredOption("--subject <text>", "Subject")
   .option("--text <text>", "Plain-text body")
   .option("--html <html>", "HTML body")
-  .action((o) => call("POST", "/v1/emails", { from: o.from, to: o.to, subject: o.subject, text: o.text, html: o.html }));
+  .option("--in-reply-to <id>", "Id or Message-ID of the message you are answering - keeps the reply in its thread")
+  .action((o) => call("POST", "/v1/emails", { from: o.from, to: o.to, cc: o.cc, bcc: o.bcc, subject: o.subject, text: o.text, html: o.html, inReplyTo: o.inReplyTo }));
 
 program
   .command("list-messages <mailbox>")
